@@ -1,0 +1,23 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>一個台大人的告白</title>
+        <link>http://NerdIsMe.github.io/</link>
+        <description>一個台大人的告白</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-tw</language><lastBuildDate>Fri, 26 Mar 2021 19:19:27 &#43;0800</lastBuildDate>
+            <atom:link href="http://NerdIsMe.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>Logistic Regression</title>
+    <link>http://NerdIsMe.github.io/posts/first-file/</link>
+    <pubDate>Fri, 26 Mar 2021 19:19:27 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://NerdIsMe.github.io/posts/first-file/</guid>
+    <description><![CDATA[幫資料分群，找出一條regression，兩側的資料不同屬性 Input data &amp; Functions Independent &amp; Dependent Variables 對於一個資料點$(x_i, t_i)$： 有 $m$個 Independent variable 的資料：$x]]></description>
+</item><item>
+    <title>淺談異化（Alienation）－馬克思給我的啟發</title>
+    <link>http://NerdIsMe.github.io/posts/alienation/</link>
+    <pubDate>Fri, 26 Mar 2021 19:19:27 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://NerdIsMe.github.io/posts/alienation/</guid>
+    <description><![CDATA[這篇文章我將分享我對馬克思異化論的基本了解，嘗試理解當代異化的存在，並分享個人見解以及啟發。 如果有任何地方有誤，請多多包涵，不吝賜教。 什麼是]]></description>
+</item></channel>
+</rss>

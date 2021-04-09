@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noodp"/><title>Logistic Regression | </title><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content=""/>
+<meta name="twitter:title" content="Logistic Regression"/>
+<meta name="twitter:description" content=""/><meta name="Description" content=""><meta property="og:title" content="Logistic Regression" />
+<meta property="og:description" content="幫資料分群，找出一條regression，兩側的資料不同屬性 Input data &amp; Functions Independent &amp; Dependent Variables 對於一個資料點$(x_i, t_i)$： 有 $m$個 Independent variable 的資料：$x" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://NerdIsMe.github.io/posts/first-file/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-03-26T19:19:27&#43;08:00" />
+<meta property="article:modified_time" content="2021-03-26T19:19:27&#43;08:00" />
+
+<meta name="application-name" content="一個台大人的告白">
+<meta name="apple-mobile-web-app-title" content="一個台大人的告白"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://NerdIsMe.github.io/posts/first-file/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Logistic Regression",
+        "inLanguage": "zh-tw",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/NerdIsMe.github.io\/posts\/first-file\/"
+        },"genre": "posts","wordCount":  987 ,
+        "url": "http:\/\/NerdIsMe.github.io\/posts\/first-file\/","datePublished": "2021-03-26T19:19:27+08:00","dateModified": "2021-03-26T19:19:27+08:00","description": ""
+    }
+    </script></head>
+    <body data-header-desktop="" data-header-mobile=""><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="一個台大人的告白" class="header-logo logo-svg">一個台大人的告白</a>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul class="menu-inner"><li>
+                        <a class="menu-item" href="/posts/"> 文章 </a>
+                    </li><li>
+                        <a class="menu-item" href="/tags/"> 標籤 </a>
+                    </li><li>
+                        <a class="menu-item" href="/categories/"> 分類 </a>
+                    </li></ul>
+            </nav><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <span class="svg-icon icon-moon"></span>
+                </a>
+            </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="一個台大人的告白" class="header-logo">一個台大人的告白</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><nav>
+                <ul><li>
+                        <a class="menu-item" href="/posts/" title="">文章</a>
+                    </li><li>
+                        <a class="menu-item" href="/tags/" title="">標籤</a>
+                    </li><li>
+                        <a class="menu-item" href="/categories/" title="">分類</a>
+                    </li></ul>
+            </nav>
+            <a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <span class="svg-icon icon-moon"></span>
+            </a></div>
+    </div>
+</header><main class="main">
+<div class="container content-article page-toc theme-classic"><div class="toc" id="toc-auto">
+            <div class="toc-title">Contents</div>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div>
+
+    <div class="header-post">
+
+        
+
+        
+        <div class="post-title">
+
+                <div class="post-all-meta">
+                    <nav class="breadcrumbs">
+    <ol>
+        <li><a href="/">Home </a></li><li>Logistic Regression</li>
+    </ol>
+</nav>
+                    <h1 class="single-title flipInX">Logistic Regression</h1><div class="post-meta">
+                        <div class="post-meta-line"><span class="post-meta-date">
+                                <i class="svg-icon icon-clock"></i><time class="timeago" datetime="2021-03-26">2021-03-26</time>
+                            </span><span class="post-meta-words">
+                                <i class="svg-icon icon-pencil"></i>987 words
+                            </span>
+                            <span class="post-meta-reading">
+                                <i class="svg-icon icon-stopwatch"></i>2 minutes
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+
+    <article class="single toc-start">
+
+        <div class="content-block content-block-first content-block-position">
+
+        <div class="post"><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#input-data--functions">Input data &amp; Functions</a>
+      <ul>
+        <li><a href="#independent--dependent-variables">Independent &amp; Dependent Variables</a></li>
+        <li><a href="#predictions">Predictions</a></li>
+        <li><a href="#probability-function-sigmodal-function">Probability Function: Sigmodal Function</a>
+          <ul>
+            <li><a href="#將-independent-variable-轉成-z-放入-sigmodal-function">將 independent variable 轉成 $z$ 放入 Sigmodal function:</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#parameter-estimation">Parameter Estimation</a>
+      <ul>
+        <li><a href="#posterior-distribution">Posterior distribution</a></li>
+        <li><a href="#likelyhood-function">Likelyhood Function</a></li>
+        <li><a href="#prior-先驗機率">Prior: 先驗機率</a>
+          <ul>
+            <li><a href="#gaussian-prior">Gaussian Prior</a></li>
+          </ul>
+        </li>
+        <li><a href="#evaluation-of-posterior-distribution">Evaluation of Posterior Distribution</a></li>
+      </ul>
+    </li>
+    <li><a href="#maximize-posterior-distribution">Maximize Posterior Distribution</a>
+      <ul>
+        <li><a href="#newtons-method">Newtons Method</a>
+          <ul>
+            <li><a href="#r1-的-linear-approximation">$R^1$ 的 linear Approximation：</a></li>
+            <li><a href="#r2-的-linear-approximation求-minimum-or-maximum">$R^2$ 的 linear Approximation：求 Minimum or Maximum</a></li>
+          </ul>
+        </li>
+        <li><a href="#newton-method-to-minimize-error-function">Newton Method to minimize error function</a>
+          <ul>
+            <li><a href="#gradient-of-error-function">Gradient of error function</a></li>
+            <li><a href="#hessian-of-the-error-function">Hessian of the error function</a></li>
+            <li><a href="#applying-newtons-method-on-logistic-regression">Applying newton&rsquo;s method on logistic regression</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><p>幫資料分群，找出一條regression，兩側的資料<strong>不同屬性</strong></p>
+<h2 id="input-data--functions">Input data &amp; Functions</h2>
+<h3 id="independent--dependent-variables">Independent &amp; Dependent Variables</h3>
+<p>對於一個資料點$(x_i, t_i)$：</p>
+<ul>
+<li>有 $m$個 Independent variable 的資料：$x_i \in R^m$</li>
+<li>dependent variables: 屬於 $C_1:t_i = 1$ or $C_2: t_i = 0$</li>
+</ul>
+<h3 id="predictions">Predictions</h3>
+<ul>
+<li>$\hat y_i = f(\phi (x_i)), 0&lt;\hat y_i &lt; 1$
+<ul>
+<li>$\hat y_i$ 是資料點 $x_i$ 屬於 $C_1$ 的機率</li>
+</ul>
+</li>
+</ul>
+<h3 id="probability-function-sigmodal-function">Probability Function: Sigmodal Function</h3>
+<p>給定一個 $z$，屬於$C_1$的機率為：
+$$\sigma(z) = \frac{1}{1+e^{-z}}$$
+![](<a href="https://i.imgur.com/7scZddK.png">https://i.imgur.com/7scZddK.png</a> =60%x)</p>
+<h4 id="將-independent-variable-轉成-z-放入-sigmodal-function">將 independent variable 轉成 $z$ 放入 Sigmodal function:</h4>
+<ul>
+<li>![](<a href="https://i.imgur.com/mi8Fqdj.png">https://i.imgur.com/mi8Fqdj.png</a> =60%x)</li>
+<li>$\sigma(z)$ 就是 給定權重$w$, bias $b$，在 $x_i$ 的情況下，$C_1$ 發生的機率 $\implies P(C_1|\phi(x_i)) = y(\phi) = \sigma(w^T\phi)$</li>
+</ul>
+<h2 id="parameter-estimation">Parameter Estimation</h2>
+<h3 id="posterior-distribution">Posterior distribution</h3>
+<ul>
+<li>Posterior distribution:
+$$P(w|t) = \frac{P(t,w)}{P(t)} = \frac{P(t|w)P(w)}{P(t)} \propto P(t|w)P(w)$$
+<ul>
+<li>後驗機率：給定已知 $t$，找 $w$ 的機率</li>
+</ul>
+</li>
+<li>$\implies$ Posterior $\propto$ <font color = blue>Likelyhood</font> * <font color = red>Prior</font></li>
+</ul>
+<h3 id="likelyhood-function">Likelyhood Function</h3>
+<ul>
+<li>
+<p>給定 parameter $w$，==我有多少機率求得 $t$==</p>
+</li>
+<li>
+<p>Likelyhood function $P(t|w)$:
+$$P(t|w) = \Pi_{n = 1}^N\ {y_n^{t_n}(1-y_n)^{1-t_n}}$$</p>
+<ul>
+<li>$y_n = \sigma (w^T\phi(x_n)), t = (t_1, t_2,..,t_N)^T$</li>
+<li>如果$t_n = 1$，機率為 $y_n^1(1-y_n)^0 = y_n$
+如果$t_n = 0$，機率為 $y_n^0(1-y_n)^1 = 1-y_n$</li>
+</ul>
+</li>
+<li>
+<p>對 liklyhood function 取 log:
+$$\begin{split}ln\ P(t|w) = \Sigma_{n = 1}^N\ t_n\ ln\ y_n + (1-t_n)ln(1-y_n)\end{split}$$</p>
+</li>
+</ul>
+<h3 id="prior-先驗機率">Prior: 先驗機率</h3>
+<ul>
+<li>還沒觀察到數據之前，對於模型的機率<strong>有一些估計或了解</strong>的概率分布。</li>
+<li>觀察到數據之後所更新的模型機率，為後驗機率。</li>
+<li>基本上，所有的機率分布都能選來作為 $p$ 不確定性的概論分布
+但 Gaussian prior 一班來說，會讓 posterior 計算上比較方便</li>
+</ul>
+<h4 id="gaussian-prior">Gaussian Prior</h4>
+<ul>
+<li>
+<p>在這裡我們使用 Gaussian prior $p(w) = N(w|m_0, s_0)$</p>
+<ul>
+<li>$m_0$ 是給定的均數, $s_0$ 是variance，兩者都是hyperparameter</li>
+</ul>
+</li>
+<li>
+<p>$\begin{split} p(w) =N(w|m_0, s_0) = \frac{exp(-\frac{1}{2} (w-m_0)^Ts^{-1}_0(w-m_0))}{\sqrt{(2 \pi)^k|s_0|}}\end{split}$</p>
+</li>
+</ul>
+<p>對 $p(w)$ 取 $ln$
+$$\begin{split}ln\ p(w) &amp;= -\frac{1}{2} (w-m_0)^Ts^{-1}_0(w-m_0)-\frac{k}{2}ln2\pi- \frac{1}{2}lns_0
+\ &amp;= -\frac{1}{2} (w-m_0)^Ts^{-1}_0(w-m_0) + \text{constant}
+\end{split}$$</p>
+<p>若假設 $m_0 = 0, s_0 = \frac{1}{\lambda}$:
+$$ln\ p(w)= -\frac{\lambda}{2}w^Tw \<br>
+\implies L2\ Regularization$$</p>
+<ul>
+<li>某種程度上，假設 $m_0 =0$ 是很合理的
+<ol>
+<li>有助於 gaussian prior 的計算</li>
+<li>對於沒有影響力的變數，權重 = 0</li>
+</ol>
+</li>
+</ul>
+<h3 id="evaluation-of-posterior-distribution">Evaluation of Posterior Distribution</h3>
+<ul>
+<li>Posterior distribution: $P(w|t) \propto P(t|w)P(w)$
+$$\implies lnP(w|t) \propto \Sigma_{n = 1}^N\ [t_n\ ln\ y_n + (1-t_n)ln(1-y_n)] -\frac{1}{2}w^Tw$$</li>
+</ul>
+<p>$$\text{Error Function} = -\Sigma_{n = 1}^N\ [t_n\ ln\ y_n + (1-t_n)ln(1-y_n)] +\frac{1}{2}w^Tw$$</p>
+<h2 id="maximize-posterior-distribution">Maximize Posterior Distribution</h2>
+<h3 id="newtons-method">Newtons Method</h3>
+<p>Gradient descent 僅僅用一次微分，有時候頗慢。Newton&rsquo;s Method 有用到二次微分，速度通常較快。</p>
+<h4 id="r1-的-linear-approximation">$R^1$ 的 linear Approximation：</h4>
+<ul>
+<li>
+<p>$x^k$ 的 Linear approximation: $f_L(x) = f(x^k) + \bigtriangledown f(x^k)(x-x^k)$</p>
+</li>
+<li>
+<p>$f'(x_n) = \frac{\bigtriangledown y}{\bigtriangledown x} = \frac{f(x_n) -0}{x_n-x_{n+1}}\<br>
+\implies x_{n+1} =x_n -\frac{f(n)}{f'(x_n)}$</p>
+</li>
+</ul>
+<p>如果今天想要找 $f(x) = 0$ 的解：</p>
+<ul>
+<li>$f_L(x^{k+1}) = f(x^k) + \bigtriangledown f(x^k)(x-x^k) =0$, 一直重複這個步驟，可以逼近 正解</li>
+<li>![](<a href="https://i.imgur.com/7Td3P1K.png">https://i.imgur.com/7Td3P1K.png</a> =40%x) 從$x_0$ 移動到 $x_1$，最終會逼近到 $\overline x$</li>
+</ul>
+<h4 id="r2-的-linear-approximation求-minimum-or-maximum">$R^2$ 的 linear Approximation：求 Minimum or Maximum</h4>
+<ul>
+<li>minimum 是一階微分 $\bigtriangledown f(x)$，求$\bigtriangledown f(x) = 0$
+對 gradient 再使用一次 Newton:
+$$x_{n+1} = x_n -\frac{\bigtriangledown f(x_n)}{\bigtriangledown^2 f(x_n)}$$</li>
+<li>如果 $x$ 是一個矩陣，則會變為：
+$$x_{n+1} = x_n-H^{-1}\bigtriangledown f(x_n)$$
+<ul>
+<li>$H = \bigtriangledown^2 f(x_n) = \frac{f(x_n)}{\partial x_n^T\partial x_n}$</li>
+<li>![](<a href="https://i.imgur.com/nC2R6iW.png">https://i.imgur.com/nC2R6iW.png</a> =60%x)</li>
+</ul>
+</li>
+</ul>
+<h3 id="newton-method-to-minimize-error-function">Newton Method to minimize error function</h3>
+<p>$$\text{Error Function = -Likelyhood Function} =- P(t|w) = -\Sigma_{n = 1}^N\ t_n\ ln\ y_n + (1-t_n)ln(1-y_n)+\frac{\lambda}{2}w^Tw$$</p>
+<h4 id="gradient-of-error-function">Gradient of error function</h4>
+<p>$$\begin{split}\bigtriangledown E(w) =\frac{E(w)}{\partial w} &amp;= \frac{-\Sigma_{n = 1}^N\ t_n\ ln\ y_n + (1-t_n)ln(1-y_n)+\frac{\lambda}{2}w^Tw}{\partial w}\<br>
+&amp;=-\Sigma_{n = 1}^N(t_n(1-\sigma(w^T\phi_n))\phi_n + (t_n - 1)\sigma(w^T\phi_n)\phi_n) + \lambda w\<br>
+&amp;= -\Sigma_{n = 1}^N (t_n -\sigma(w^T\phi_n))+ \lambda w\<br>
+&amp; = \Sigma_{n = 1}^N (\sigma(w^T\phi_n) - t_n)+ \lambda w \<br>
+&amp; = \Phi^T(y-t) + \lambda w
+\end{split}$$</p>
+<ul>
+<li>![](<a href="https://i.imgur.com/SwXxO0K.png">https://i.imgur.com/SwXxO0K.png</a> =40%x)</li>
+<li>$\frac{\partial y}{\partial w} = \frac{\partial (w^T\phi_n)}{\partial w} = \phi_n$</li>
+<li>$\frac{y}{\partial w} =\frac{\partial \sigma(w^T\phi_n)}{\partial w} = \frac{\partial \sigma(w^T\phi_n)}{\partial (w^T\phi_n)}\frac{\partial w^T\phi_n}{\partial w} = \sigma (w^T\phi_n)(1-\sigma(w^T\phi_n))\phi_n$</li>
+</ul>
+<h4 id="hessian-of-the-error-function">Hessian of the error function</h4>
+<p>$$\begin{split}\bigtriangledown \bigtriangledown E(w) = \frac{\bigtriangledown E(w)}{\partial w^T} &amp;= \Sigma_{n = 1}^N y_n(1-y_n)\phi_n\phi_n^T+\lambda I\<br>
+&amp;=\Phi^TR\Phi+\lambda I
+\end{split}$$</p>
+<ul>
+<li>$R$ is a $N\times N$ diangonal matrix with elements $R_{n\times n}= y_n(1-y_n)$,</li>
+</ul>
+<h4 id="applying-newtons-method-on-logistic-regression">Applying newton&rsquo;s method on logistic regression</h4>
+<ol>
+<li>Get Error function $E(w)$</li>
+<li>Compute gradient $\bigtriangledown E(w)$</li>
+<li>Compute hessian $H(w) = \bigtriangledown^2 E(w)$</li>
+<li>Newton&rsquo;s method: $w^{n+1} = w^n - H(w_n)^{-1}\bigtriangledown E(w_n)$</li>
+</ol>
+</div>
+
+            <div class="post" style="padding-top: 0">
+
+
+<div class="post-share"></div>
+</div>
+        </div>
+    <div id="toc-final"></div>
+    </article></div>
+
+</main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.82.0">Hugo</a> | Theme - <a href="https://ublogger.netlify.app/?utm_source=http://NerdIsMe.github.io/&utm_medium=footer&utm_campaign=config&utm_term=2.0.1" target="_blank" title="uBlogger 2.0.1">uBlogger</a>
+                </div><div class="footer-line"><i class="svg-icon icon-copyright"></i><span>2021</span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="svg-icon icon-arrow-up"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="svg-icon icon-comments-fixed"></i>
+            </a>
+        </div><script src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10}};</script><script src="/js/theme.min.js"></script></body>
+</html>
