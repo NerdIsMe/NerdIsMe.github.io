@@ -1,9 +1,37 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Tags - Tag - 一個台大人的告白</title>
+        <title>Tags - Tag - 𨑨迌與生活</title>
         <link>http://NerdIsMe.github.io/tags/</link>
-        <description>Tags - Tag - 一個台大人的告白</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-tw</language><lastBuildDate>Fri, 16 Apr 2021 01:05:27 &#43;0800</lastBuildDate><atom:link href="http://NerdIsMe.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+        <description>Tags - Tag - 𨑨迌與生活</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-tw</language><lastBuildDate>Sun, 27 Jun 2021 06:40:00 &#43;0800</lastBuildDate><atom:link href="http://NerdIsMe.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>NTUcourse</title>
+    <link>http://NerdIsMe.github.io/tags/ntucourse/</link>
+    <pubDate>Sun, 27 Jun 2021 06:40:00 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://NerdIsMe.github.io/tags/ntucourse/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>作物繁殖組</title>
+    <link>http://NerdIsMe.github.io/tags/%E4%BD%9C%E7%89%A9%E7%B9%81%E6%AE%96%E7%B5%84/</link>
+    <pubDate>Sun, 27 Jun 2021 06:40:00 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://NerdIsMe.github.io/tags/%E4%BD%9C%E7%89%A9%E7%B9%81%E6%AE%96%E7%B5%84/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>田園生活體驗</title>
+    <link>http://NerdIsMe.github.io/tags/%E7%94%B0%E5%9C%92%E7%94%9F%E6%B4%BB%E9%AB%94%E9%A9%97/</link>
+    <pubDate>Sun, 27 Jun 2021 06:40:00 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://NerdIsMe.github.io/tags/%E7%94%B0%E5%9C%92%E7%94%9F%E6%B4%BB%E9%AB%94%E9%A9%97/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>課程心得</title>
+    <link>http://NerdIsMe.github.io/tags/%E8%AA%B2%E7%A8%8B%E5%BF%83%E5%BE%97/</link>
+    <pubDate>Sun, 27 Jun 2021 06:40:00 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://NerdIsMe.github.io/tags/%E8%AA%B2%E7%A8%8B%E5%BF%83%E5%BE%97/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>日記</title>
     <link>http://NerdIsMe.github.io/tags/%E6%97%A5%E8%A8%98/</link>
     <pubDate>Fri, 16 Apr 2021 01:05:27 &#43;0800</pubDate>
@@ -16,13 +44,6 @@
     <pubDate>Fri, 16 Apr 2021 01:05:27 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://NerdIsMe.github.io/tags/%E6%9C%8D%E5%AD%B8/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>田園生活體驗</title>
-    <link>http://NerdIsMe.github.io/tags/%E7%94%B0%E5%9C%92%E7%94%9F%E6%B4%BB%E9%AB%94%E9%A9%97/</link>
-    <pubDate>Fri, 16 Apr 2021 01:05:27 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://NerdIsMe.github.io/tags/%E7%94%B0%E5%9C%92%E7%94%9F%E6%B4%BB%E9%AB%94%E9%A9%97/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>草頭寶寶</title>

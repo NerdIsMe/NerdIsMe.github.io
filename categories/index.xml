@@ -1,9 +1,16 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Categories - Category - 一個台大人的告白</title>
+        <title>Categories - Category - 𨑨迌與生活</title>
         <link>http://NerdIsMe.github.io/categories/</link>
-        <description>Categories - Category - 一個台大人的告白</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-tw</language><lastBuildDate>Fri, 16 Apr 2021 01:05:27 &#43;0800</lastBuildDate><atom:link href="http://NerdIsMe.github.io/categories/" rel="self" type="application/rss+xml" /><item>
+        <description>Categories - Category - 𨑨迌與生活</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-tw</language><lastBuildDate>Sun, 27 Jun 2021 06:40:00 &#43;0800</lastBuildDate><atom:link href="http://NerdIsMe.github.io/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>課程心得</title>
+    <link>http://NerdIsMe.github.io/categories/%E8%AA%B2%E7%A8%8B%E5%BF%83%E5%BE%97/</link>
+    <pubDate>Sun, 27 Jun 2021 06:40:00 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://NerdIsMe.github.io/categories/%E8%AA%B2%E7%A8%8B%E5%BF%83%E5%BE%97/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>日記</title>
     <link>http://NerdIsMe.github.io/categories/%E6%97%A5%E8%A8%98/</link>
     <pubDate>Fri, 16 Apr 2021 01:05:27 &#43;0800</pubDate>
