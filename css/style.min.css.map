@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "C:/Users/Jerome/Desktop/2020-spring/my_blog",
+	"sourceRoot": "C:/Users/Jerome/Desktop/my_blog",
 	"sources": [
 		"themes/uBlogger/assets/css/style.scss",
 		"themes/uBlogger/assets/css/_variables.scss",
