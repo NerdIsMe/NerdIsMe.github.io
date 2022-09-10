@@ -3,26 +3,33 @@
         <title>Tags - Tag - 𨑨迌與生活</title>
         <link>http://NerdIsMe.github.io/tags/</link>
         <description>Tags - Tag - 𨑨迌與生活</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-tw</language><lastBuildDate>Sun, 21 Aug 2022 01:24:47 &#43;0800</lastBuildDate><atom:link href="http://NerdIsMe.github.io/tags/" rel="self" type="application/rss+xml" /><item>
-    <title>個人觀點</title>
-    <link>http://NerdIsMe.github.io/tags/%E5%80%8B%E4%BA%BA%E8%A7%80%E9%BB%9E/</link>
-    <pubDate>Sun, 21 Aug 2022 01:24:47 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://NerdIsMe.github.io/tags/%E5%80%8B%E4%BA%BA%E8%A7%80%E9%BB%9E/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-tw</language><lastBuildDate>Sat, 27 Aug 2022 21:46:34 &#43;0800</lastBuildDate><atom:link href="http://NerdIsMe.github.io/tags/" rel="self" type="application/rss+xml" /><item>
     <title>出國交換</title>
     <link>http://NerdIsMe.github.io/tags/%E5%87%BA%E5%9C%8B%E4%BA%A4%E6%8F%9B/</link>
-    <pubDate>Sun, 21 Aug 2022 01:24:47 &#43;0800</pubDate>
+    <pubDate>Sat, 27 Aug 2022 21:46:34 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://NerdIsMe.github.io/tags/%E5%87%BA%E5%9C%8B%E4%BA%A4%E6%8F%9B/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>歐洲</title>
     <link>http://NerdIsMe.github.io/tags/%E6%AD%90%E6%B4%B2/</link>
-    <pubDate>Sun, 21 Aug 2022 01:24:47 &#43;0800</pubDate>
+    <pubDate>Sat, 27 Aug 2022 21:46:34 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://NerdIsMe.github.io/tags/%E6%AD%90%E6%B4%B2/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>KU Leuven</title>
+    <link>http://NerdIsMe.github.io/tags/ku-leuven/</link>
+    <pubDate>Wed, 24 Aug 2022 01:44:48 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://NerdIsMe.github.io/tags/ku-leuven/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>個人觀點</title>
+    <link>http://NerdIsMe.github.io/tags/%E5%80%8B%E4%BA%BA%E8%A7%80%E9%BB%9E/</link>
+    <pubDate>Sun, 21 Aug 2022 01:24:47 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://NerdIsMe.github.io/tags/%E5%80%8B%E4%BA%BA%E8%A7%80%E9%BB%9E/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>飛機</title>
@@ -65,13 +72,6 @@
     <pubDate>Sun, 27 Jun 2021 06:40:00 &#43;0800</pubDate>
     <author>Author</author>
     <guid>http://NerdIsMe.github.io/tags/%E7%94%B0%E5%9C%92%E7%94%9F%E6%B4%BB%E9%AB%94%E9%A9%97/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>課程心得</title>
-    <link>http://NerdIsMe.github.io/tags/%E8%AA%B2%E7%A8%8B%E5%BF%83%E5%BE%97/</link>
-    <pubDate>Sun, 27 Jun 2021 06:40:00 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>http://NerdIsMe.github.io/tags/%E8%AA%B2%E7%A8%8B%E5%BF%83%E5%BE%97/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
